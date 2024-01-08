@@ -1,0 +1,252 @@
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .admin-header__nav-list {
+    display: flex;
+    align-items: center;
+  }
+  
+  .admin-header__nav-item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .admin-header__nav-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    margin: 4px;
+  }
+  
+  .admin-header__nav-item i {
+    margin-right: 5px;
+  }
+
+
+  .delete-button {
+    background-color: #ff4d4f;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    background-color: #ff7875;
+  }
+  
+  .add-department-container {
+    margin-top: 20px;
+  }
+  
+  .department-input {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #e0e0e0;
+    margin-right: 10px;
+  }
+  
+  .add-button {
+    background-color: #40a9ff;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .add-button:hover {
+    background-color: #69c0ff;
+  }
+  .department-actions button {
+    margin-right: 10px; /* Adjust the value to increase or decrease the spacing */
+  }
+  .department-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .department-table th,
+  .department-table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+  
+  }
+  
+  .department-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .department-table .department-item td {
+    vertical-align: middle;
+  }
+  .department-table td {
+    text-align: center;
+    vertical-align: middle;
+  }
+  .save-button,
+  .edit-button,
+  .delete-button {
+    margin-right: 10px; /* Thay đổi giá trị margin tùy ý */
+  }
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    z-index: 999;
+    border: 1px solid #ccc;
+  }
+  .modal-content {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .modal-content .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .modal-content label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .modal-content input,
+  .modal-content select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .modal-content .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .modal-content .save-button,
+  .modal-content .cancel-button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .modal-content .save-button {
+    background-color: #4caf50;
+  }
+  
+  .modal-content .cancel-button {
+    background-color: #ccc;
+  }
+  
+  .department-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .department-table th,
+  .department-table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .department-table th {
+    background-color: #f2f2f2;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .department-table button {
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background: saddlebrown;
+  }
+  
+  .department-table .edit-button {
+    background-color: #4caf50;
+  }
+  
+  .department-table .delete-button {
+    background-color: #ff0000;
+  }
+  .admin-header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .admin-header__logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .admin-header__nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .admin-header__nav-item {
+    margin-right: 10px;
+  }
+  
+  .admin-header__nav-link {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .admin-header__nav-link i {
+    margin-right: 5px;
+  }
+  
+  .admin-header__logout-button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .admin-header__logout-button i {
+    margin-right: 5px;
+  }
+  .admin-header__nav-item.active {
+    background-color: #f0f0f0;
+    color: #000;
+    font-weight: bold;
+  }
+  .admin-header__nav {
+    overflow-y: auto;
+    max-height: 400px; /* Đặt chiều cao tối đa của menu ở đây */
+  }
+  .admin-header__nav-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
